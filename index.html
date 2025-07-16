@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | My Portfolio</title>
+
+  <meta name="description" content="Sreevidya is a freelance data analyst and digital marketing strategist who transforms data into insights and ideas into impact. View portfolio, projects, and contact information.">
+<meta name="keywords" content="Sreevidya, data analyst, freelance analyst, digital marketing, data visualization, Python, SQL, storytelling, marketing freelancer, business analytics">
+<meta name="author" content="Sreevidya">
+<meta name="robots" content="index, follow">
+<title>Sreevidya | Freelance Data Analyst & Digital Marketing Specialist</title>
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Custom CSS -->
+  <style>
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .navbar .nav-link {
+    font-weight: 500;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+
+  .navbar .nav-link:hover,
+  .navbar .nav-link.active {
+    color: #ff66b2 !important;
+  }
+
+  body {
+    padding-top: 70px; /* offset for fixed navbar */
+  }
+
+
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfdfd;
+      margin: 0;
+      padding: 0;
+    }
+
+    #about {
+      padding: 4rem 1rem;
+      background-color: #f9f9f9;
+    }
+
+    #about h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+
+    #about .avatar {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 5px solid #ccc;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 2rem auto;
+    }
+
+    #about .about-text {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+      color: #444;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 576px) {
+      #about h2 {
+        font-size: 2rem;
+      }
+
+      #about .avatar {
+        width: 140px;
+        height: 140px;
+      }
+
+      #about .about-text {
+        font-size: 1rem;
+        padding: 0 1rem;
+      }
+    }
+
+
+
+  #projects h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+    color: #555;
+  }
+
+  .card-body .btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .card {
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  @media (max-width: 576px) {
+    .card-img-top {
+      height: 180px;
+    }
+  }
+
+  
+  #skills h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+
+  #skills .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #222;
+  }
+
+  #skills .card-text {
+    font-size: 0.95rem;
+    color: #555;
+  }
+
+  #skills .btn-link {
+    font-size: 0.9rem;
+    text-decoration: underline;
+    color: #007bff;
+    padding: 0;
+  }
+
+  #skills .btn-link:hover {
+    text-decoration: none;
+    color: #0056b3;
+  }
+
+  @media (max-width: 576px) {
+    #skills .card-text {
+      font-size: 0.9rem;
+    }
+
+    #skills .card-title {
+      font-size: 1.1rem;
+    }
+  }
+
+  
+  /* Contact Section */
+  #contact i {
+    color: #ff66b2;
+  }
+
+  .social-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #ff66b2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+  }
+
+  .social-icon img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+  }
+
+  .social-icon:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+  }
+
+  @media (max-width: 576px) {
+    #contact .row > div {
+      flex-direction: column;
+    }
+
+    .social-icon {
+      margin: 5px;
+    }
+  }
+
+
+</style>
+
+
+
+
+</head>
+<body>
+
+    <!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">Sreevidya's Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <div id="home"></div>
+  
+
+  <!-- About Section Start -->
+  <section id="about">
+    <div class="container">
+      <h2>About</h2>
+      <img src="images/about/1.png" alt="Profile Picture" class="avatar">
+
+      <div class="about-text">
+
+        <p>Hi, I’m <strong>Sreevidya</strong> — a freelance <strong>Data Analyst</strong> and <strong>Digital Marketing Specialist</strong> passionate about uncovering insights from data and translating them into actionable strategies that drive business growth.</p>
+
+        <p>With a unique blend of analytical expertise and marketing intuition, I specialize in helping businesses make smarter decisions through data visualization, storytelling, and digital campaign performance analysis. Whether you're a startup or a scaling brand, I’m here to help you turn numbers into narratives that matter.</p>
+
+    
+    </div>
+    </div>
+  </section>
+  <!-- About Section End -->
+
+  <!-- Projects Section Start -->
+<section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5" style="font-size: 2.5rem; font-weight: 600; color: #333;">Projects</h2>
+  
+      <div class="row justify-content-center">
+        <!-- Project 1 -->
+        <div class="col-md-6 col-lg-4 mb-4 d-flex">
+          <div class="card shadow-sm w-100">
+            <img src="images/projects/1.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Sales Dashboard using Power BI</h5>
+                <p class="card-text">An interactive Power BI dashboard visualizing regional sales, customer segments, and product performance to support business decisions.</p>
+                
+              <div class="mt-auto">
+                <a href="#" class="btn btn-sm btn-outline-primary me-2">Blog Post</a>
+                <a href="#" class="btn btn-sm btn-outline-secondary">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-4 mb-4 d-flex">
+          <div class="card shadow-sm w-100">
+            <img src="images/projects/2.jpg" class="card-img-top" alt="Project 2">
+            <div class="card-body d-flex flex-column">
+
+             
+              <h5 class="card-title">Marketing Campaign Analytics</h5>
+                <p class="card-text">Analyzed campaign data across Google Ads and social platforms using Python and Tableau to improve lead conversion rates by 25%.</p>
+
+
+              <div class="mt-auto">
+                <a href="#" class="btn btn-sm btn-outline-primary me-2">Blog Post</a>
+                <a href="#" class="btn btn-sm btn-outline-secondary">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project 3 -->
+        <div class="col-md-6 col-lg-4 mb-4 d-flex">
+          <div class="card shadow-sm w-100">
+            <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
+            <div class="card-body d-flex flex-column">
+
+                <h5 class="card-title">Customer Segmentation with K-Means</h5>
+                <p class="card-text">Used Python and machine learning to segment e-commerce customers by behavior and value, enabling personalized marketing strategies.</p>
+                
+              <div class="mt-auto">
+                <a href="#" class="btn btn-sm btn-outline-primary me-2">Blog Post</a>
+                <a href="#" class="btn btn-sm btn-outline-secondary">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Projects Section End -->
+
+  <!-- Skills Section Start -->
+<section id="skills" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-5" style="font-size: 2.5rem; font-weight: 600; color: #333;">Skills</h2>
+  
+      <div class="row justify-content-center">
+        <!-- Skill 1 -->
+        <div class="col-md-6 col-lg-3 mb-4 d-flex">
+          <div class="card h-100 text-center shadow-sm w-100">
+            <div class="p-4">
+              <img src="images/skills/1.png" alt="Python" style="height: 60px;">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Python</h5>
+
+              <p class="card-text">Experienced in data cleaning, analysis, and automation using Pandas, NumPy, and Matplotlib. Used for everything from EDA to machine learning.</p>
+
+              
+              <a href="#" class="mt-auto btn btn-link">Link to course or bootcamp</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 2 -->
+        <div class="col-md-6 col-lg-3 mb-4 d-flex">
+          <div class="card h-100 text-center shadow-sm w-100">
+            <div class="p-4">
+              <img src="images/skills/2.png" alt="Data Visualization" style="height: 60px;">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Data Visualization</h5>
+
+              <p class="card-text">Skilled in visual storytelling with tools like Tableau, Power BI, and Seaborn to simplify complex data and guide key decisions.</p>
+
+              <a href="#" class="mt-auto btn btn-link">Link to course or bootcamp</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 3 -->
+        <div class="col-md-6 col-lg-3 mb-4 d-flex">
+          <div class="card h-100 text-center shadow-sm w-100">
+            <div class="p-4">
+              <img src="images/skills/3.png" alt="SQL" style="height: 60px;">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">SQL</h5>
+
+              <p class="card-text">Proficient in writing advanced queries, joins, and stored procedures to retrieve and transform data from relational databases efficiently.</p>
+
+              <a href="#" class="mt-auto btn btn-link">Link to course or bootcamp</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 4 -->
+        <div class="col-md-6 col-lg-3 mb-4 d-flex">
+          <div class="card h-100 text-center shadow-sm w-100">
+            <div class="p-4">
+              <img src="images/skills/4.png" alt="Data Storytelling" style="height: 60px;">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Data Storytelling</h5>
+
+              <p class="card-text">Combine narrative with visual design to present insights in clear, persuasive formats tailored to business stakeholders and executives.</p>
+
+              <a href="#" class="mt-auto btn btn-link">Link to course or bootcamp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Skills Section End -->
+  
+  <!-- Contact Section Start -->
+<section id="contact" class="py-5" style="background-color: #1a1a1a; color: #ffffff;">
+    <div class="container text-center">
+      <!-- Heading -->
+      <h2 class="mb-5" style="font-size: 2.5rem; font-weight: 600;">Contact Me</h2>
+      <p>If you're looking for a freelance data analyst or digital marketing partner who can deliver results and insights, feel free to reach out. Let’s collaborate!</p>
+      
+      <!-- Email and Phone -->
+      <div class="row justify-content-center mb-4">
+        <div class="col-12 col-md-6 d-flex justify-content-center mb-3 mb-md-0">
+          <i class="bi bi-envelope-fill me-2" style="font-size: 1.2rem;"></i>
+          <span>sreemenon231@gmail.com</span>
+        </div>
+        <div class="col-12 col-md-6 d-flex justify-content-center">
+          <i class="bi bi-telephone-fill me-2" style="font-size: 1.2rem;"></i>
+          <span>+91-9673995802</span>
+        </div>
+      </div>
+  
+      <!-- Social Media Icons -->
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="https://www.linkedin.com/in/sreevidya-menon-2669286/" class="social-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
+          <img src="icons/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="#" class="social-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter">
+          <img src="icons/twitter.png" alt="Twitter">
+        </a>
+        <a href="#" class="social-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
+          <img src="icons/github.png" alt="GitHub">
+        </a>
+        <a href="#" class="social-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Medium">
+          <img src="icons/medium.png" alt="Medium">
+        </a>
+        <a href="#" class="social-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="YouTube">
+          <img src="icons/youtube.png" alt="YouTube">
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section End -->
+  
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+      new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
